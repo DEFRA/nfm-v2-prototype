@@ -1,0 +1,92 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  How can I reduce flooding in my area?
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        alpha
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+  <a class="govuk-back-link" href="../index">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        How can I reduce flooding in my area?
+      </h1>
+
+      <p class="govuk-body">Some introductory copy about why this service exists.</p>
+      <p class="govuk-body">Climate change, more flood risk, the fact that traditional flood defences are not always the answer.</p>
+      <p class="govuk-body">Floods are a complex issue, causes not always obvious, and they are based on local geography.</p>
+      <p class="govuk-body">This service will help by:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Explaining the types of flooding in your area</li>
+        <li>Reasons why flooding happens in your area</li>
+        <li>Provide steps you can take to help prevent flooding for you and your community in the future</li>
+      </ul>
+
+      <a href="postcode" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+        Start now
+        <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+        </svg>
+      </a>
+
+      <h2 class="govuk-heading-m">Before you start</h2>
+
+      <p class="govuk-body">House keeping information.</p>
+
+      <p class="govuk-body">Caveats.</p>
+
+      <p class="govuk-body">Disclaimers?</p>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+        <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+        <aside class="app-related-items" role="complementary">
+          <h2 class="govuk-heading-m" id="subsection-title">
+            Related content
+          </h2>
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="govuk-list govuk-!-font-size-16">
+              <li>
+                <a class="govuk-link" href="https://flood-warning-information.service.gov.uk/warnings">
+                  Check your immediate flood risk
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" href="https://flood-warning-information.service.gov.uk/5-day-flood-risk?_ga=2.203237463.77474540.1572345023-902236253.1554453719&_gac=1.158934600.1570532269.CjwKCAjw5_DsBRBPEiwAIEDRW7EfP37Wg2AzLlBkZNTpdinb3-amc1875cjdwiLaU-qXZCN8vsz9VhoC2QUQAvD_BwE">
+                  Check your flood risk for the next 5 days
+                </a>
+              </li>
+              <li>
+                <a href="https://flood-warning-information.service.gov.uk/long-term-flood-risk?_ga=2.127667275.77474540.1572345023-902236253.1554453719&_gac=1.124390008.1570532269.CjwKCAjw5_DsBRBPEiwAIEDRW7EfP37Wg2AzLlBkZNTpdinb3-amc1875cjdwiLaU-qXZCN8vsz9VhoC2QUQAvD_BwE" class="govuk-link">
+                  Check your long-term flood risk
+                </a>
+              </li>
+
+            </ul>
+          </nav>
+        </aside>
+
+  </div>
+
+{% endblock %}
