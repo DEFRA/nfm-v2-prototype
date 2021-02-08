@@ -1,0 +1,97 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        alpha
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Start",
+        href: "start_v1"
+      },
+      {
+        text: "About your area",
+        href: "area"
+      },
+      {
+        text: "A map of your area",
+        href: "#"
+      }
+    ]
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">A map of your area</h1>
+
+      <h2 class="govuk-heading-l">You area is the Mersey Estuary Catchment</h2>
+
+      <img class="placeholder-map" src="/public/images/catchment.png" alt="">
+
+      <h3 class="govuk-heading-m">The causes of flooding in your area</h3>
+
+      <p>There are lots of different types of flooding. Water can come from lots of different sources spread over a wide area. This area is called <a class="govuk-link" href="flooding#catchments">a catchment</a>.
+
+      <p>The main causes of flooding in your area are:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li><strong><a class="govuk-link" href="flooding#river">River flooding</a></strong> from the rivers that feed the River Mersey. Eg Sankey Brook, River Glaze, and the River Birket.</li>
+        <li><strong><a class="govuk-link" href="flooding#tidal">Tidal flooding</a></strong>, especially along the Mersey Estuary and around the Wirral Peninsula</li>
+        <li><strong><a class="govuk-link" href="flooding#surface">Surface Water flooding</a></strong>, especially in urban areas Eg. Liverpool, Warrington, Ashton in Makerfield and some areas of Wirral</li>
+        <li><strong><a class="govuk-link" href="flooding#sewer">Sewer flooding</a></strong> can happen in all areas, but especially Hindley and Prescot</li>
+      </ul>
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+        <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+        <aside class="app-related-items" role="complementary">
+
+          <h2 class="govuk-heading-m" id="subsection-title">
+            In this section
+          </h2>
+
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="govuk-list govuk-!-font-size-16">
+              <li>
+                <a class="govuk-link" href="flooding">
+                  The different types of flooding
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" href="nfm">
+                  Natural Flood Management
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+
+  </div>
+
+
+{% endblock %}
