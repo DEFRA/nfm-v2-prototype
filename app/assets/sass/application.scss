@@ -23,3 +23,10 @@ $govuk-assets-path: '/govuk/assets/';
   margin-bottom: 1.4em;
   width: 100%;
 }
+
+.summary {
+  &-box {
+    background-color: #f3f2f1;
+    padding: 12px
+  }
+}
