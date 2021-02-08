@@ -1,0 +1,224 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        alpha
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  {{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "start_v1"
+    },
+    {
+      text: "Your area",
+      href: "area"
+    },
+    {
+      text: "Natural Flood Management",
+      href: "#"
+    }
+  ]
+}) }}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Natural Flood Management
+      </h1>
+
+      <p class="govuk-body">
+        Some introductory information about what NFM is, what it is and why it is important. Some introductory information about what NFM is, what it is and why it is important. Some introductory information about what NFM is, what it is and why it is important. Some introductory information about what NFM is, what it is and why it is important.
+      </p>
+
+      <p class="govuk-body">
+        Below you will find a list of the sort of schemes that are possible.
+      </p>
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+        <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+        <aside class="app-related-items" role="complementary">
+
+          <h2 class="govuk-heading-m" id="subsection-title">
+            In this section
+          </h2>
+
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="govuk-list govuk-!-font-size-16">
+              <li>
+                <a class="govuk-link" href="flooding">
+                  The different types of flooding
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" href="nfm">
+                  Natural Flood Management
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+
+  </div>
+
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <h2 class="govuk-heading-l">
+        Leaky Dams
+      </h2>
+
+      <p class="govuk-body">
+        Leaky Dams
+      </p>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      Pros and cons
+    </div>
+
+  </div>
+
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <h2 class="govuk-heading-l">
+        Bunds
+      </h2>
+
+      <p class="govuk-body">
+        Bunds
+      </p>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      Pros and cons
+    </div>
+
+  </div>
+
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <h2 class="govuk-heading-l">
+        Tree Planting
+      </h2>
+
+      <p class="govuk-body">
+        Tree Planting
+      </p>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      Pros and cons
+    </div>
+
+  </div>
+
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <h2 class="govuk-heading-l">
+        River re-meandering
+      </h2>
+
+      <p class="govuk-body">
+        River re-meandering
+      </p>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      Pros and cons
+    </div>
+
+  </div>
+
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <h2 class="govuk-heading-l">
+        Water Butts
+      </h2>
+
+      <p class="govuk-body">
+        Water Butts
+      </p>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      Pros and cons
+    </div>
+
+  </div>
+
+  <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <h2 class="govuk-heading-l">
+        Drainable Surfaces
+      </h2>
+
+      <p class="govuk-body">
+        SuDS
+      </p>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      Pros and cons
+    </div>
+
+  </div>
+
+
+
+
+{% endblock %}
