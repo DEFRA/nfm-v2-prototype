@@ -16,26 +16,9 @@
     </p>
   </div>
 
-  {{ govukBreadcrumbs({
-    items: [
-      {
-        text: "Start",
-        href: "start_v1"
-      },
-      {
-        text: "Enter postcode",
-        href: "postcode"
-      },
-      {
-        text: "About your area",
-        href: "area"
-      },
-      {
-        text: "Natural Flood Management",
-        href: "#"
-      }
-    ]
-  }) }}
+  <a class="govuk-back-link" href="area">
+    Back
+  </a>
 
 {% endblock %}
 

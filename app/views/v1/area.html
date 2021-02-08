@@ -16,22 +16,9 @@
     </p>
   </div>
 
-  {{ govukBreadcrumbs({
-    items: [
-      {
-        text: "Start",
-        href: "start_v1"
-      },
-      {
-        text: "Enter postcode",
-        href: "postcode"
-      },
-      {
-        text: "About your area",
-        href: "#"
-      }
-    ]
-  }) }}
+  <a class="govuk-back-link" href="postcode">
+    Back
+  </a>
 
 {% endblock %}
 
@@ -45,13 +32,11 @@
         Your area is the Mersey Estuary
       </h1>
 
-      <div class="govuk-inset-text">
+      <p class="govuk-body-l">From what you have told us, your area is in the <strong>Mersey Estuary Catchment</strong> area</p>
 
-        <p class="govuk-body">From what you have told us, your area is in the <strong>Mersey Estuary Catchment</strong> area</p>
+      <p class="govuk-body"><a class="govuk-link" href="map">View the Mersey Estuary Catchment on a map</a></p>
 
-        <p class="govuk-body"><a class="govuk-link" href="map">View the Mersey Estuary Catchment on a map</a></p>
-      </div>
-
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
 
       <h3 class="govuk-heading-l">The causes of flooding in your area</h3>
 
@@ -147,7 +132,7 @@
         <aside class="app-related-items" role="complementary">
 
           <h2 class="govuk-heading-m" id="subsection-title">
-            In this section
+            Related content
           </h2>
 
           <nav role="navigation" aria-labelledby="subsection-title">

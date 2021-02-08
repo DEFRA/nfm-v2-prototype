@@ -16,26 +16,9 @@
     </p>
   </div>
 
-  {{ govukBreadcrumbs({
-    items: [
-    {
-      text: "Start",
-      href: "start_v1"
-    },
-    {
-      text: "Enter postcode",
-      href: "postcode"
-    },
-    {
-      text: "About your area",
-      href: "area"
-    },
-      {
-        text: "A map of your area",
-        href: "#"
-      }
-    ]
-  }) }}
+  <a class="govuk-back-link" href="area">
+    Back
+  </a>
 
 {% endblock %}
 
@@ -74,7 +57,7 @@
         <aside class="app-related-items" role="complementary">
 
           <h2 class="govuk-heading-m" id="subsection-title">
-            In this section
+            Related content
           </h2>
 
           <nav role="navigation" aria-labelledby="subsection-title">
