@@ -8,14 +8,31 @@
   <div class="govuk-phase-banner">
     <p class="govuk-phase-banner__content">
       <strong class="govuk-tag govuk-phase-banner__content__tag">
-        alpha
+        prototype
       </strong>
       <span class="govuk-phase-banner__text">
         This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
       </span>
     </p>
   </div>
-  <a class="govuk-back-link" href="postcode">Back</a>
+
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "start_v1"
+      },
+      {
+        text: "Enter postcode",
+        href: "postcode"
+      },
+      {
+        text: "About your area",
+        href: "#"
+      }
+    ]
+  }) }}
+
 {% endblock %}
 
 {% block content %}
@@ -24,7 +41,9 @@
 
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Floods in your area and how you can help reduce them</h1>
+      <h1 class="govuk-heading-xl">
+        Floods in your area and how you can help reduce them
+      </h1>
 
       <div class="govuk-inset-text">
         <h2 class="govuk-heading-m">You are in the Mersey Estuary Catchment</h2>
@@ -35,7 +54,7 @@
       </div>
 
 
-      <h3 class="govuk-heading-l">The causes of flooding in you area</h3>
+      <h3 class="govuk-heading-l">The causes of flooding in your area</h3>
 
       <p>There are lots of different types of flooding. Water can come from lots of different sources spread over a wide area. This area is called <a class="govuk-link" href="flooding#catchment">a catchment</a>.
 
