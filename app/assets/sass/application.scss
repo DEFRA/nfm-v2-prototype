@@ -19,6 +19,15 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+.index-date {
+  margin-bottom: 0;
+}
+
+.index-version,
+.govuk-heading-l.index-version {
+  padding-top: 0;
+}
+
 .placeholder-map {
   margin-bottom: 1.4em;
   width: 100%;
