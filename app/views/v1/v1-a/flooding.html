@@ -1,0 +1,142 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  About flooding
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        prototype
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a class="govuk-back-link" href="area">
+    Back
+  </a>
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">All about flooding</h1>
+
+      <h2 class="govuk-heading-l">
+        Why floods happen.
+      </h2>
+
+      <p class="govuk-body">
+        Some copy about the type of flooding. Why they happen. When they happen. What they do. Etc etc etc
+      </p>
+
+      <h3 class="govuk-heading-m" id="catchments">
+        What is a catchment?
+      </h3>
+
+      <p class="govuk-body">
+        Some copy about what a catchment is and why it's important to think about flooding as a much wider area.
+      </p>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <h2 class="govuk-heading-l">
+        The different types of flooding
+      </h2>
+
+      <h3 class="govuk-heading-m" id="river">
+        River flooding
+      </h3>
+
+      <img class="content-image" src="/public/images/infographic-fluvial-floods.jpg" alt="An infographic explaining a type of flooding">
+
+      <p class="govuk-body">
+        Some copy about the type of flooding. Why they happen. When they happen. What they do. Etc etc etc
+      </p>
+
+      <h3 class="govuk-heading-m" id="tidal">
+        Tidal flooding
+      </h3>
+
+      <img class="content-image" src="/public/images/infographic-coastal-flood.jpg" alt="An infographic explaining a type of flooding">
+
+      <p class="govuk-body">
+        Some copy about the type of flooding. Why they happen. When they happen. What they do. Etc etc etc
+      </p>
+
+      <h3 class="govuk-heading-m" id="surface">
+        Surface Water flooding
+      </h3>
+
+      <img class="content-image" src="/public/images/infographic-pluvial-floods.jpg" alt="An infographic explaining a type of flooding">
+
+      <p class="govuk-body">
+        Some copy about the type of flooding. Why they happen. When they happen. What they do. Etc etc etc
+      </p>
+
+      <h3 class="govuk-heading-m"  id="sewer">
+        Sewer Water flooding
+      </h3>
+
+      <p class="govuk-body">
+        Some copy about the type of flooding. Why they happen. When they happen. What they do. Etc etc etc
+      </p>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <h2 class="govuk-heading-l" id="catchments">
+        Natural Flood Management
+      </h2>
+
+      <p class="govuk-body">
+        NFM is a way of reducing flood risk by working with whole catchment. Putting in schemes 'higher up' the catchment can have reducing effects lower down.
+      </p>
+
+      <p class="govuk-body">
+        <a href="nfm" class="govuk-link">
+          Learn more about NFM and how it can be effective in reducing flood risk
+        </a>
+      </p>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+        <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+        <aside class="app-related-items" role="complementary">
+
+          <h2 class="govuk-heading-m" id="subsection-title">
+            Related content
+          </h2>
+
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="govuk-list govuk-!-font-size-16">
+              <li>
+                <a class="govuk-link" href="flooding">
+                  The different types of flooding
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" href="nfm">
+                  Natural Flood Management
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+
+  </div>
+
+
+{% endblock %}

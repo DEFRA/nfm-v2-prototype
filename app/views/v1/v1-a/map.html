@@ -1,0 +1,132 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  How to reduce flooding in your area
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        prototype
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
+
+  <a class="govuk-back-link" href="area">
+    Back
+  </a>
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">A map of your area</h1>
+
+      <h2 class="govuk-heading-l">You area is the Mersey Estuary Catchment</h2>
+
+      <img class="placeholder-map" src="/public/images/catchment.png" alt="">
+
+      <h3 class="govuk-heading-l">The causes of flooding in your area</h3>
+
+      <p>There are lots of different types of flooding. Water can come from lots of different sources spread over a wide area. This area is called <a class="govuk-link" href="flooding#catchments">a catchment</a>.
+
+      <p>The main causes of flooding in your area are:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li><strong><a class="govuk-link" href="flooding#river">River flooding</a></strong> from the rivers that feed the River Mersey. Eg Sankey Brook, River Glaze, and the River Birket.</li>
+        <li><strong><a class="govuk-link" href="flooding#tidal">Tidal flooding</a></strong>, especially along the Mersey Estuary and around the Wirral Peninsula</li>
+        <li><strong><a class="govuk-link" href="flooding#surface">Surface Water flooding</a></strong>, especially in urban areas Eg. Liverpool, Warrington, Ashton in Makerfield and some areas of Wirral</li>
+        <li><strong><a class="govuk-link" href="flooding#sewer">Sewer flooding</a></strong> can happen in all areas, but especially Hindley and Prescot</li>
+      </ul>
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+      <h2 class="govuk-heading-l">How to reduce flooding in your area</h2>
+
+      <h3 class="govuk-heading-m">Natural Flood Management</h3>
+
+      <p class="govuk-body">
+        Some introductory information about what NFM, what it is and why it is important
+      </p>
+
+      <p class="govuk-body">
+        <a class="govuk-link" href="nfm">
+          All about Natural Flood Management
+        </a>
+      </p>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <h2 class="govuk-heading-l">What is happening in my area</h2>
+
+      <h3 class="govuk-heading-m">Projects</h3>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          A leaky Dam project - <a href="#" class="govuk-link">Link to project</a>
+        </li>
+        <li>
+          Subsidised water butts - <a href="#" class="govuk-link">Link to project</a>
+        </li>
+        <li>
+          Sustainable drainage systems - <a href="#" class="govuk-link">Link to project</a>
+        </li>
+      </ul>
+
+      <h3 class="govuk-heading-m">Groups</h3>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          A flood group - <a href="#" class="govuk-link">Link to project</a>
+        </li>
+        <li>
+          A flood group - <a href="#" class="govuk-link">Link to project</a>
+        </li>
+        <li>
+          A river trust - <a href="#" class="govuk-link">Link to project</a>
+        </li>
+      </ul>
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+        <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+        <aside class="app-related-items" role="complementary">
+
+          <h2 class="govuk-heading-m" id="subsection-title">
+            Related content
+          </h2>
+
+          <nav role="navigation" aria-labelledby="subsection-title">
+            <ul class="govuk-list govuk-!-font-size-16">
+              <li>
+                <a class="govuk-link" href="flooding">
+                  The different types of flooding
+                </a>
+              </li>
+              <li>
+                <a class="govuk-link" href="nfm">
+                  Natural Flood Management
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+      </div>
+
+  </div>
+
+
+{% endblock %}
