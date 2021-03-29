@@ -98,3 +98,10 @@ $govuk-assets-path: '/govuk/assets/';
   padding-right: 10px;
   margin-top: 0;
 }
+
+//Help notice {
+.application-notice,
+.help-notice {
+  background-color: #eee;
+  padding: 1.5em;
+}
