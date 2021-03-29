@@ -16,9 +16,18 @@
     </p>
   </div>
 
-  <a class="govuk-back-link" href="postcode">
-    Back
-  </a>
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Home",
+        href: "#"
+      },
+      {
+        text: "The name of the service",
+        href: "#"
+      }
+    ]
+  }) }}
 
 {% endblock %}
 
@@ -28,48 +37,213 @@
 
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">
-        Whitehall Publisher?
-      </h1>
+      <div class="gem-c-title govuk-!-margin-top-0 govuk-!-margin-bottom-8">
 
-      <p class="govuk-body">
-        What is this?
-      </p>
+        <span class="govuk-caption-xl gem-c-title__context">
+          Guidance
+        </span>
+
+        <h1 class="govuk-heading-xl">
+          Understand why flooding happens
+        </h1>
+
+        <p class="govuk-body-l">
+          Find out about different types etc
+        <p>
+
+      </div>
 
     </div>
 
-    <div class="govuk-grid-column-one-third">
+    <div class="govuk-grid-column-full">
 
-        <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+      <hr class="govuk-section-break govuk-section-break--s govuk-section-break--visible">
 
-        <aside class="app-related-items" role="complementary">
+      <div class="gem-c-metadata govuk-!-margin-top-3" data-module="gem-toggle">
 
-          <h2 class="govuk-heading-m" id="subsection-title">
-            Related content
-          </h2>
-
-          <nav role="navigation" aria-labelledby="subsection-title">
-            <ul class="govuk-list govuk-!-font-size-16">
-
-              <li>
-                <a class="govuk-link" href="https://flood-warning-information.service.gov.uk/long-term-flood-risk">
-                Check your long-term flood risk</a>
-              </li>
-              <li>
-                <a class="govuk-link" href="https://flood-warning-information.service.gov.uk/warnings">
-                  Check your flood risk warnings
+        <dl data-module="gem-track-click" class="govuk-body-s">
+          <dt class="gem-c-metadata__term">From:</dt>
+            <dd class="gem-c-metadata__definition">
+              <a class="govuk-link" href="#">Department for Environment, Food and Rural Affairs</a>
+            </dd>
+          <dt class="gem-c-metadata__term">Published:</dt>
+            <dd class="gem-c-metadata__definition">28 March 2021</dd>
+          <dt class="gem-c-metadata__term">Last updated:</dt>
+            <dd class="gem-c-metadata__definition">
+              28 March 2021,
+                <a href="#history" class="gem-c-metadata__definition-link" data-track-category="content-history" data-track-action="see-all-updates-link-clicked" data-track-label="history">
+                  see all updates
                 </a>
-              </li>
-              <li>
-                <a class="govuk-link" href="https://flood-warning-information.service.gov.uk/5-day-flood-risk">
-                  Check your flood risk for the next 5 days
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </aside>
+            </dd>
+        </dl>
 
       </div>
+
+    </div>
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <nav class="gem-c-contents-list gem-c-contents-list--no-underline">
+
+        <h2 class="govuk-body govuk-!-margin-top-6 govuk-!-margin-bottom-0 govuk-!-font-size-16">
+          Contents
+        </h2>
+
+        <ul class="gem-c-contents-list__list govuk-!-margin-top-1">
+
+          <li class="gem-c-contents-list__list-item govuk__list-item--dashed">
+            <a class="govuk-link" href="#">
+              What causes flooding
+            </a>
+          </li>
+
+          <li class="gem-c-contents-list__list-item govuk__list-item--dashed">
+            <a class="govuk-link" href="#">
+              Sewer
+            </a>
+          </li>
+
+          <li class="gem-c-contents-list__list-item govuk__list-item--dashed">
+            <a class="gem-c-contents-list__link govuk-link" href="#">
+              What to do to prevent flooding
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="gem-c-print-link govuk-!-margin-top-9 govuk-!-margin-bottom-6">
+          <button class="govuk-link gem-c-print-link__button">
+            Print this page
+          </button>
+      </div>
+
+      <div class="govuk-inset-text">
+        <a href="#" class="govuk-link">
+          Find current flood warnings
+        </a>
+      </div
+
+      <h2 class="govuk-heading-l" id="what-causes-flooding">
+        What causes flooding
+      </h2>
+
+      <p class="govuk-body">
+        Flooding is caused by (excess water that cannot be absobed?)
+      </p>
+
+      <p class="govuk-body">
+        Its not just the local area that has an impact on flooding. Catchments are a whole system
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          rivers are interlinked
+        </li>
+        <li>
+          activities upstream  can affecting surface run-off
+        </li>
+      </ul>
+
+      {{ govukWarningText({
+        text: "Our climate is changing and one of the risks is an increase in flooding. Extreme weather events could happen more often. (text from LTFRI)"
+      }) }}
+
+      <h3 class="govuk-heading-m" id="rivers-and-the-sea">
+        Rivers and the sea
+      </h3>
+
+      <p>River flooding is caused when rain and snow increase river levels - runn=
+      ing down hills etc Flooding from the sea is caused when storm forces water ashore.</p>
+
+      <p>The Environment Agency is responsible for managing the flood risk from rivers and the sea.</p>
+
+      <h3 class="govuk-heading-m" id="surface-water">
+        Surface water
+      </h3>
+
+      <p>Sometimes known as flash flooding:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          happens when heavy rain cannot drain away
+        </li>
+        <li>
+          can happen up hills and away from rivers and other bodies of water
+        </li>
+        <li>
+          is difficult to predict as it depends on rainfall volume and location
+        </li>
+        <li>
+          is more widespread in areas with harder surfaces like concrete
+        </li>
+
+      </ul>
+
+      <p>Lead local flood authorities (LLFA) are responsible for managing the flood risk from surface water.</p>
+
+      <h3 class="govuk-heading-m" id="reservoirs">
+        Reservoirs
+      </h3>
+
+      <p>Flooding from reservoirs is extremely unlikely. An area is considered at risk if peoples lives could be threatened by an uncontrolled release of water from a reservoir.</p>
+
+      <p>Find out who to contact through LTFRI (or is it allways just going to be the local lead flood authory?)</p>
+
+      <h3 class="govuk-heading-m" id="groundwater">
+        Groundwater
+      </h3>
+
+      <p>This is when the water (need to define?) rises up from rocks or soils to above ground level after much longer periods of sustained high rainfall.</p>
+
+      <p>The rainfall infiltrates into the ground causing the water table to rise above normal levels.</p>
+
+      <p>Contact your local lead flood authority</p>
+
+      <h2 class="govuk-heading-l" id="sewer">
+        Sewer
+      </h2>
+
+      <p>What causes this? Burst pipes? heavy rainfall put strain on pipes?</p>
+
+      <p>Contact local utility company</p>
+
+      <h2 class="govuk-heading-l" id="what-to-do-to-prevent-flooding">
+        What to do to prevent flooding
+      </h2>
+
+      <p>Find out how to <a href="#" class="govuk-link">protect yourself from future flooding</a></p>
+
+
+      <hr class="govuk-section-break govuk-section-break--s govuk-!-margin-top-9 govuk-section-break--visible">
+
+      <div class="app-c-published-dates app-c-published-dates--history govuk-body-s govuk-!-margin-top-1" id="history">
+        Published 16 September 2019
+        <br>
+        Last updated 31 December 2020
+        <a href="#full-history" class="app-c-published-dates__toggle govuk-link" data-controls="full-history" data-expanded="false" data-toggled-text="-&nbsp;hide all updates" role="button" aria-controls="full-history" aria-expanded="false">
+          +&nbsp;show all updates
+        </a>
+
+</div>
+
+
+      <div class="app-c-contents-list-with-body__link-container govuk-!-margin-top-6">
+        <a class="govuk-link app-c-back-to-top dont-print" href="#contents">
+          <svg class="app-c-back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+          </svg>Contents
+        </a>
+      </div>
+
+      <div class="gem-c-print-link govuk-!-margin-top-6 govuk-!-margin-bottom-6">
+          <button class="govuk-link gem-c-print-link__button">Print this page</button>
+      </div>
+
+
+
+    </div>
 
   </div>
 
