@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block beforeContent %}
+<!--
   <div class="govuk-phase-banner">
     <p class="govuk-phase-banner__content">
       <strong class="govuk-tag govuk-phase-banner__content__tag">
@@ -15,6 +16,7 @@
       </span>
     </p>
   </div>
+  -->
 
   {{ govukBreadcrumbs({
     items: [
@@ -44,11 +46,11 @@
         </span>
 
         <h1 class="govuk-heading-xl">
-          Understand why flooding happens
+          Increase your resilience to flooding using natural flood management
         </h1>
 
         <p class="govuk-body-l">
-          Find out about different types etc
+          You can use natural solutions to reduce the risk and impact of future flooding by capturing water or slowing its flow.
         <p>
 
       </div>
@@ -59,7 +61,8 @@
 
       <hr class="govuk-section-break govuk-section-break--s govuk-section-break--visible">
 
-      <div class="gem-c-metadata govuk-!-margin-top-3" data-module="gem-toggle">
+      <!--
+        <div class="gem-c-metadata govuk-!-margin-top-3" data-module="gem-toggle">
 
         <dl data-module="gem-track-click" class="govuk-body-s">
           <dt class="gem-c-metadata__term">From:</dt>
@@ -78,6 +81,7 @@
         </dl>
 
       </div>
+      -->
 
     </div>
 
@@ -85,27 +89,39 @@
 
       <nav class="gem-c-contents-list gem-c-contents-list--no-underline">
 
-        <h2 class="govuk-body govuk-!-margin-top-6 govuk-!-margin-bottom-0 govuk-!-font-size-16">
+        <h2 id="contents" class="govuk-body govuk-!-margin-top-6 govuk-!-margin-bottom-0 govuk-!-font-size-16">
           Contents
         </h2>
 
         <ul class="gem-c-contents-list__list govuk-!-margin-top-1">
 
           <li class="gem-c-contents-list__list-item govuk__list-item--dashed">
-            <a class="govuk-link" href="#">
-              What causes flooding
+            <a class="govuk-link" href="#what-natural-flood-management-can-do">
+              What natural flood management can do
             </a>
           </li>
 
           <li class="gem-c-contents-list__list-item govuk__list-item--dashed">
-            <a class="govuk-link" href="#">
-              Sewer
+            <a class="govuk-link" href="#multiple-benefits">
+              Multiple benefits
             </a>
           </li>
 
           <li class="gem-c-contents-list__list-item govuk__list-item--dashed">
-            <a class="gem-c-contents-list__link govuk-link" href="#">
-              What to do to prevent flooding
+            <a class="gem-c-contents-list__link govuk-link" href="#make-small-changes-use-small-scale-solutions">
+              Make small changes Use small scale solutions
+            </a>
+          </li>
+
+          <li class="gem-c-contents-list__list-item govuk__list-item--dashed">
+            <a class="gem-c-contents-list__link govuk-link" href="#work-together">
+              Work together
+            </a>
+          </li>
+
+          <li class="gem-c-contents-list__list-item govuk__list-item--dashed">
+            <a class="gem-c-contents-list__link govuk-link" href="#take-action">
+              Take action
             </a>
           </li>
 
@@ -119,102 +135,77 @@
           </button>
       </div>
 
-      <div class="application-notice help-notice govuk-!-margin-bottom-6">
-        <a href="#" class="govuk-link">
-          Find current flood warnings
-        </a>
-      </div>
-
-      <h2 class="govuk-heading-l" id="what-causes-flooding">
-        What causes flooding
-      </h2>
-
       <p class="govuk-body">
-        Flooding is caused by (excess water that cannot be absobed?)
+        Flooding can be caused by different factors you can <a rel="external" href="https://flood-warning-information.service.gov.uk/long-term-flood-risk">check your long term flood risk</a>
       </p>
 
-      <p class="govuk-body">
-        Its not just the local area that has an impact on flooding. Catchments are a whole system
-      </p>
+      <h2 class="govuk-heading-l" id="what-natural-flood-management-can-do">What natural flood management can do</h2>
 
-      <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-6">
-        <li>
-          rivers are interlinked
-        </li>
-        <li>
-          activities upstream  can affecting surface run-off
-        </li>
-      </ul>
+      <p>[catchment information]</p>
 
-      {{ govukWarningText({
-        text: "Our climate is changing and one of the risks is an increase in flooding. Extreme weather events could happen more often. (text from LTFRI)",
-        iconFallbackText: "Warning"
-      }) }}
-
-      <h3 class="govuk-heading-m" id="rivers-and-the-sea">
-        Rivers and the sea
-      </h3>
-
-      <p>River flooding is caused when rain and snow increase river levels - runn=
-      ing down hills etc Flooding from the sea is caused when storm forces water ashore.</p>
-
-      <p>The Environment Agency is responsible for managing the flood risk from rivers and the sea.</p>
-
-      <h3 class="govuk-heading-m" id="surface-water">
-        Surface water
-      </h3>
-
-      <p>Sometimes known as flash flooding:</p>
+      <p>You can use natural flood management to:</p>
 
       <ul class="govuk-list govuk-list--bullet">
-        <li>
-          happens when heavy rain cannot drain away
-        </li>
-        <li>
-          can happen up hills and away from rivers and other bodies of water
-        </li>
-        <li>
-          is difficult to predict as it depends on rainfall volume and location
-        </li>
-        <li>
-          is more widespread in areas with harder surfaces like concrete
-        </li>
-
+        <li>delay when the flood peak arrives giving you more time to prepare</li>
+        <li>reduce the effect of flooding by ….</li>
       </ul>
 
-      <p>Lead local flood authorities (LLFA) are responsible for managing the flood risk from surface water.</p>
+      <p>Natural flood management provides improvements in the long term. It can provide solutions for a range of locations where hard engineering such as [walls?] are not suitable. It can also work with these [another word for hard engineering] to provide low maintenance, sustainable [word].</p>
 
-      <h3 class="govuk-heading-m" id="reservoirs">
-        Reservoirs
-      </h3>
+      <p>Find out about how <a href="https://www.gov.uk/flood-and-coastal-erosion-risk-management-research-reports/working-with-natural-processes-to-reduce-flood-risk">others have used natural flood management to increase their resilience</a>.</p>
 
-      <p>Flooding from reservoirs is extremely unlikely. An area is considered at risk if peoples lives could be threatened by an uncontrolled release of water from a reservoir.</p>
+      <h2 class="govuk-heading-l" id="multiple-benefits">Multiple benefits</h2>
 
-      <p>Find out who to contact through LTFRI (or is it allways just going to be the local lead flood authory?)</p>
+      <p>By working with natural processes you can also:</p>
 
-      <h3 class="govuk-heading-m" id="groundwater">
-        Groundwater
-      </h3>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>increase biodiversity</li>
+        <li>improve water quality</li>
+        <li>improve soil health</li>
+        <li>capture carbon</li>
+      </ul>
 
-      <p>This is when the water (need to define?) rises up from rocks or soils to above ground level after much longer periods of sustained high rainfall.</p>
+      <h2 class="govuk-heading-l" id="make-small-changes-use-small-scale-solutions">Make small changes Use small scale solutions</h2>
 
-      <p>The rainfall infiltrates into the ground causing the water table to rise above normal levels.</p>
+      <p>You can contribute to capturing water and slowing its by:</p>
 
-      <p>Contact your local lead flood authority</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>installing water butts</li>
+        <li>reduce hard paving around your property</li>
+        <li>install green roofs</li>
+        <li>building ponds and rain gardens</li>
+        <li>use leftover soil to build mounds</li>
+      </ul>
 
-      <h2 class="govuk-heading-l" id="sewer">
-        Sewer
-      </h2>
+      <p>Find out more about <a rel="external" href="https://slowtheflow.net/links-suds/">how to use these sustainable drainage systems</a>.</p>
 
-      <p>What causes this? Burst pipes? heavy rainfall put strain on pipes?</p>
+      <h2 class="govuk-heading-l" id="work-together">Work together</h2>
 
-      <p>Contact local utility company</p>
+      <p>By working together with your local communities and non-governmental organisations you can get involved in a wide range of solutions.</p>
 
-      <h2 class="govuk-heading-l" id="what-to-do-to-prevent-flooding">
-        What to do to prevent flooding
-      </h2>
+      <p>Even if you don’t experience flooding, using natural flood management can help those who do as actions in one location can lead to significant results in another location.</p>
 
-      <p>Find out how to <a href="#" class="govuk-link">protect yourself from future flooding</a></p>
+      <p>Work together to:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>plant trees and manage woodland to……</li>
+        <li>improve soil to increase water absorption</li>
+        <li>restore rivers and floodplains to their natural state</li>
+        <li>restore salt marshes and ….. To capture floodwater from the sea</li>
+      </ul>
+
+      <h2 class="govuk-heading-l" id="take-action">Take action</h2>
+
+      <p>There are a number of organisations who can help you use natural flood management to reduce the risk and effect of flooding.</p>
+
+      <p>Find out <a rel="external" href="https://catchmentbasedapproach.org/get-involved/">what is going on in your catchment</a>.</p>
+
+      <p>Contact:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>your local council [Who??] to see if there is a flood group in your area - find out more about what <a rel="external" href="https://nationalfloodforum.org.uk/working-together/communities/what-is-a-flood-action-group/">flood action groups</a> dothey can also help you prepare flood plans.</li>
+        <li>the Environment Agency to find out about your local flood resilience team who can help you prepare flood plans and provide information on local projects you can get involved in</li>
+      </ul>
 
 
       <hr class="govuk-section-break govuk-section-break--s govuk-!-margin-top-9 govuk-section-break--visible">

@@ -47,14 +47,23 @@ $govuk-assets-path: '/govuk/assets/';
 
 //WHITEHALL PUBLISHER STYLES
 
-//dashed list style
+//Contents list
+.gem-c-contents-list__title {
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
 .gem-c-contents-list__list {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
 
   &-item {
+    line-height: 1.3;
+    padding-top: 7.5px;
     padding-left: 25px;
+    padding-right: 25px;
   }
 }
 .govuk__list-item--dashed {
@@ -104,4 +113,62 @@ $govuk-assets-path: '/govuk/assets/';
 .help-notice {
   background-color: #eee;
   padding: 1.5em;
+}
+
+//Contact styling
+.contact {
+  border-left: 1px solid #b1b4b6;
+  padding-left: 15px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+}
+
+//Related Navigation
+.gem-c-related-navigation {
+  color: #0b0c0c;
+  border-top: 2px solid #1d70b8;
+}
+
+.gem-c-related-navigation__link-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 1.25em;
+}
+
+.gem-c-related-navigation__link {
+line-height: 1.28;
+  margin-top: 15px;
+}
+
+
+//Brexit CTA
+.gem-c-contextual-sidebar__brexit-cta {
+  margin-bottom: 30px;
+  background-color: #f3f2f1;
+  border-top: 2px solid #ff003b;
+  display: block;
+  padding: 0 15px 15px;
+  text-decoration: none;
+}
+
+.gem-c-contextual-sidebar__take-action-traffic-lights>li {
+  white-space: nowrap;
+  display: inline;
+  margin-right: 7px;
+  margin-bottom: 5px;
+}
+
+.gem-c-contextual-sidebar__take-action-traffic-lists-icon {
+  vertical-align: middle;
+  margin-top: -2px;
+  width: 22px;
+  margin-right: 2px;
+}
+
+.gem-c-contextual-sidebar__take-action-traffic-lists-text {
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 2;
 }
