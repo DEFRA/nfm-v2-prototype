@@ -45,7 +45,7 @@ $govuk-assets-path: '/govuk/assets/';
   max-width: 90%;
 }
 
-//WHITEHALL PUBLISHER STYLES
+//WHITEHALL STYLES
 
 //The main gov.uk header!
 #global-header {
@@ -223,6 +223,32 @@ $govuk-assets-path: '/govuk/assets/';
     overflow: hidden;
     background-color: #1d70b8;
     color: #fff;
+}
+
+//MAINSTREAM HEADER STYLES
+//Yes this is becoming a specificity nightmare ... but we are where we are.
+
+#global-header.global-header--mainstream {
+
+  .header-wrapper {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .header-logo {
+    width: 33%;
+  }
+
+  .header-global {
+    width: 100%;
+  }
+
+  #search {
+    float: right;
+    margin-top: 0;
+    width: 33%;
+  }
+
 }
 
 .header-proposition {
