@@ -437,8 +437,15 @@ $govuk-assets-path: '/govuk/assets/';
 //Help notice {
 .application-notice,
 .help-notice {
-  background-color: #eee;
-  padding: 1.5em;
+  background-color: #fff;
+  border-left: 12px solid #aaa;
+  margin: 2em 0 2.5em 0;
+  padding: 1em 0 1em 1em;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 //Contact styling
@@ -466,6 +473,34 @@ $govuk-assets-path: '/govuk/assets/';
 .gem-c-related-navigation__link {
 line-height: 1.28;
   margin-top: 15px;
+}
+
+//Important information box-sizing
+.app-c-important-metadata {
+  background-color: rgb(29, 112, 184);
+  color: #fff;
+
+  a {
+    &:link {
+      color: #fff;
+    }
+  }
+
+  dl {
+
+    dt {
+      display: block;
+
+      margin-right: 3px;
+      float: left;
+    }
+
+    dd {
+      display: block;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
 }
 
 
